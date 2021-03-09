@@ -1,0 +1,250 @@
+\documentclass[11pt]{article}
+
+\usepackage[left=0.6in,top=1in,right=0.6in,bottom=1in]{geometry}
+%\usepackage{amsmath, amssymb}
+%\usepackage{amsthm}
+%\usepackage{fontspec}
+\usepackage{setspace}
+%\usepackage{physics}
+\usepackage{tgpagella}
+%\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue},
+}
+%\usepackage[noabbrev]{cleveref}
+%\usepackage{graphicx}
+%\graphicspath{ {figure/} }
+%\usepackage{adjustbox}
+%\usepackage{float}
+%\usepackage{array}
+%\usepackage{booktabs}
+%\usepackage{mathrsfs}
+%\usepackage{subcaption}
+%\usepackage[flushleft]{threeparttable}
+%\usepackage{multirow}
+%\usepackage{tikz}
+%\usepackage[toc,page]{appendix}
+%\usepackage{pdflscape}
+%\usepackage{color}
+%\usepackage{comment}
+\usepackage{titling}
+\usepackage{boldline}
+\usepackage[parfill]{parskip}
+\usepackage{tabularx}
+%\usepackage{mdframed}
+\usepackage{fancyhdr}
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\rhead{\begin{tabular}{r V{4} r}
+				Andrew Yizhou Liu & \thepage\\
+				\textbf{January 2021} & \\
+				\end{tabular}
+				}
+	\headheight 10pt
+	\pagestyle{fancy}
+%\fancyheadoffset[LO,RE]{-3.5cm}
+\fancyheadoffset[RO]{1cm}
+
+%\setlength{\hoffset}{2cm}
+%\makeatletter
+%\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+%\makeatother
+
+% Shift title up
+%\setlength{\droptitle}{-3cm}
+
+
+% Change the title, author, and dates format
+%\pretitle{\begin{center}\LARGE}
+%\posttitle{\par\end{center}}
+%\preauthor{\begin{center}
+%\large \vspace{-0.3cm}
+%\begin{tabular}[t]{c}}
+%\postauthor{\end{tabular}\par\end{center}}
+%\predate{\begin{center}\large\vspace{-0.5cm}}
+%\postdate{\par\end{center}}
+
+% Change tablenote font
+%\makeatletter 
+%\g@addto@macro\TPT@defaults{\fontsize{12pt}{\baselineskip}} 
+%\makeatother
+
+% Define new environment
+\newenvironment{rSection}[1]{ % 1 input argument - section name
+  %\MakeUppercase{\bf #1} % Section title
+  {\large\bf\textsc{#1}}
+  \vspace{0.15cm}
+  \begin{list}{}{ % List for each individual item in the section
+    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\rightmargin}{1.5em}
+   % \setlength{\itemindent}{-#1}}
+  }
+  \item[]
+}{
+  \end{list}
+  \vspace{0.15cm}
+}
+
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{corollary}{Corollary}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{proposition}{Proposition}
+
+% Spacing
+\onehalfspacing
+
+% Change fontsize of footnote
+%\renewcommand{\footnotesize}{\small} 
+%
+%\newcommand{\E}{\mathbb{E}}
+%\newcommand{\PM}{\mathbb{P}}
+%\newcommand{\F}{\mathscr{F}}
+%\newcommand{\A}{\tilde{a}}
+%\newcommand{\I}{\mathbb{I}}
+%\newcommand{\IS}{\mathbb{I}_{sw}}
+%\newcommand{\XL}{\underline{x}}
+%\newcommand{\XU}{\overline{x}}
+%\newcommand{\BA}{\boldsymbol{a}}
+%\newcommand{\BJ}{\boldsymbol{j}}
+%\newcommand{\BI}{\boldsymbol{i}}
+%\newcommand{\ystar}{y^{*}}
+
+\interfootnotelinepenalty=10000
+\raggedbottom
+
+% Empty page
+\pagestyle{empty}
+
+%===================================
+\begin{document}
+%\thispagestyle{empty}
+\begin{center}
+\large\textbf{Andrew Yizhou Liu}\\
+{\bf January 2021}
+\end{center}
+
+%\noindent\begin{tabularx}{\linewidth}{p{8cm} p{6cm} X}
+%\hspace{-0.27cm} Placement Director: Emanuel Vespa & \href{mailto:vespa@ucsb.edu}{vespa@ucsb.edu} & 1-805-893-7309 \\
+%\hspace{-0.27cm} Graduate Administrator: Mark Patterson & \href{mailto:mark.patterson@ucsb.edu}{mark.patterson@ucsb.edu} & 1-805-893-2205
+%\end{tabularx}
+
+% Contact info
+\begin{rSection}{Contact Information}
+\begin{tabular}{p{8cm} p{2.2cm} p{7cm}}
+Department of Economics 410 WCOB & \bf{Email:} & \href{mailto:andrei.liuyz@gmail.com}{andrei.liuyz@gmail.com} \\
+University of Arkansas, Fayetteville, AR 72701 &  \bf{Home page:} &  \href{https://andrew-yizhouliu.github.io}{andrew-yizhouliu.github.io} \\
+\end{tabular}
+\end{rSection}
+
+% Education
+\begin{rSection}{Education}
+\begin{tabularx}{\linewidth}{p{2.7cm} >{\hangindent=2em}X}
+2020 & University of California, Santa Barbara, Ph.D., Economics
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{2.7cm} >{\hangindent=2em}X}
+2018 & University of California, Santa Barbara, M.A., Statistics
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{2.7cm} >{\hangindent=2em}X}
+2015 & University of California, Santa Barbara, M.A., Economics
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{2.7cm} >{\hangindent=2em}X}
+2012 & Nanjing University, B.A., Economics
+\end{tabularx}
+\end{rSection}
+
+% Employment
+\begin{rSection}{Employment}
+\begin{tabularx}{\linewidth}{p{2.7cm} >{\hangindent=2em}X}
+2020 - present & Assistant professor, Department of Economics, University of Arkansas
+\end{tabularx}
+\end{rSection}
+
+% Working Papers
+\begin{rSection}{Working Papers}
+\begin{tabularx}{\linewidth}{>{\hangindent=2em}X}
+``The Minimum Wage and Occupational Mobility'' (\emph{R\&R International Economic Review})\\
+``Optimal Taxation with Observable Labor Market Entry Shocks and Limited Educational Resources'' (Under Review)\\
+``The Effect of the Minimum Wage on Employment Growth: An Event-Study Framework,'' (Under Review) Joint with Chang Hyung Lee\\
+``Working from a Distance: Productivity Dispersion and Labor Reallocation,'' (Under Review) Joint with Jingping Gu and Dongya Koh
+``The Large Volatility and the Slow Recovery of the Job-Finding Rate''
+\end{tabularx}
+\end{rSection}
+
+% Works in Progress
+\begin{rSection}{Works in Progress}
+\begin{tabularx}{\linewidth}{>{\hangindent=2em}X}
+``The Job-Finding Rate Dynamics: Does Heterogeneity Matter?''\\
+``The Employment Effect of the Minimum Wage Under Unregulated Effort,'' Joint with Christine Braun and Peter Rupert\\
+\end{tabularx}
+\end{rSection}
+
+% Teaching
+\begin{rSection}{Teaching Experience}
+{\bf Instructor}, University of Arkansas\\
+\begin{tabularx}{\linewidth}{p{0.3cm} >{\hangindent=2em}X}
+& Econometrics I, Introduction to Econometrics, International Macroeconomics and Finance\\[0.3cm]
+\end{tabularx}
+{\bf Head Teaching Assistant}, University of California, Santa Barbara\\
+\begin{tabularx}{\linewidth}{p{0.3cm} >{\hangindent=2em}X}
+& Intermediate Macroeconomic Theory\\
+\end{tabularx}
+\\[0.3cm]
+{\bf Teaching Assistant}, University of California, Santa Barbara\\
+\begin{tabularx}{\linewidth}{p{0.3cm} >{\hangindent=2em}X}
+& Introduction to Econometrics, Intermediate Macroeconomic Theory, Intermediate Microeconomic Theory, Principles of Economics-Micro, Principles of Economics-Macro\\
+\end{tabularx}
+\end{rSection}
+
+% Conference
+\begin{rSection}{Conference Presentations and Seminars}
+\begin{tabularx}{\linewidth}{l >{\hangindent=2em}X}
+2020 & UCSB Macroeconomics Seminar\\
+2019 & UCSB Macroeconomic Workshop, UCSB Labor Lunch, UCSB Applied Microeconomics Lunch\\
+2018 & Midwest Macro Conference, 13th Economics Graduate Students' Conference, 12th All CA Labor Conference Poster Session\\
+2017 & UC Economics Graduate Students Seminar, UCSB Macroeconomic Workshop, UCSB Department Seminar\\
+2016 & UCSB Macroeconomic Workshop, UCSB Department Seminar\\
+\end{tabularx}
+\end{rSection}
+
+% Conference Summarizer
+%\begin{rSection}{Conference Summarizer}
+%\begin{tabularx}{\linewidth}{l >{\hangindent=2em}X}
+%2019 & ``HULM''\\
+%2018 & ``International Trade'', ``OTC Market III'', ``Business Cycle''\\
+%2017 & ``OTC Market II''\\
+%2016 & ``Why the Government Does What It Does'', ``Business Cycle'', ``Bubbles'', ``OTC Market'', ``Pecuniary Externality''\\
+%\end{tabularx}
+%\end{rSection}
+\begin{rSection}{Referee}
+\begin{tabularx}{\linewidth}{l >{\hangindent=2em}X}
+2020 & Labour Economics, Industrial Relation
+\end{tabularx}
+\end{rSection}
+% Technical Skills
+%\begin{rSection}{Technical Skills}
+%\begin{tabularx}{\linewidth}{l >{\hangindent=2em}X}
+%{\bf Programming Languages:} & Julia, Python, Matlab, Stata, R, \LaTeX\\%[0.1cm]
+%%{\bf Programming Skills:} & \href{https://www.coursera.org/account/accomplishments/specialization/TMH5CPRZLN5V}{Machine Learning}, \href{https://github.com/Andrew-YizhouLiu/Scrape}{Web Scraping}\\
+%\end{tabularx}
+%\end{rSection}
+
+% Reference
+%\begin{rSection}{References}
+%\setlength{\tabcolsep}{4pt}
+%\begin{tabularx}{\linewidth}{l l l}
+%{\bf Professor Peter Rupert (Chair)} & {\bf Professor John Kennan} & {\bf Professor Finn Kydland} \\
+%UCSB & UW Madison & UCSB \\
+%{\it Phone:} (805)-722-0481 & {\it Phone:} (608)-262-5393 & {\it Phone:} (805)-893-2258\\
+%{\it Email:} \href{mailto:peter.rupert@ucsb.edu}{peter.rupert@ucsb.edu} & {\it Email:} \href{mailto:jkennan@ssc.wisc.edu}{jkennan@ssc.wisc.edu} & {\it Email:} \href{mailto:finn.kydland@ucsb.edu}{finn.kydland@ucsb.edu}\\[0.3cm]
+%{\bf Associate Professor Javier Birchenall} & {\bf Professor Henning Bohn} & \\   
+%UCSB & UCSB & \\
+%{\it Phone:} (805)-893-5275 & {\it Phone:} (805)-893-4532 &  \\
+%{\it Email:} \href{mailto:javier.birchenall@ucsb.edu}{javier.birchenall@ucsb.edu} & {\it Email:} \href{henning.bohn@ucsb.edu}{henning.bohn@ucsb.edu} & \\
+%\end{tabularx}
+%\end{rSection}
+
+
+
+\end{document}
