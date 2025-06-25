@@ -4,107 +4,142 @@ title: Andrew Yizhou Liu
 ---
 
 <head>
-<style>
-@media screen and (max-width:600px) and (min-width:10px)
-{
-  #tab1 {
-    display: none;
+  <style>
+    /* ¡­ your existing mobile rules ¡­ */
 
-  }
-}
-@media screen and (min-width:600px)
-{
-  #tab2 {
-    display: none;
+    @media screen and (min-width: 601px) {
+      /* hide the mobile table */
+      #tab2 {
+        display: none;
+      }
 
-  }
-}
-</style>
+      /* show & style the desktop table */
+      #tab1 {
+        display: table;
+        width: auto;
+        box-shadow: none;
+        background-color: transparent;
+        margin: 60px auto;       /* push the whole block down a bit */
+        text-align: center;
+      }
+
+      /* add plenty of vertical space on each line */
+      #tab1 p {
+        font-size: 20px;
+        color: black;
+        margin: 1em 0;            /* 1em top & bottom */
+      }
+
+      /* style the link©\row container */
+      #tab1 .links {
+        width: 80%;               /* span most of the screen */
+        margin: 2em auto 0;       /* 2em above, 0 below */
+        border-collapse: collapse;
+      }
+
+      /* give each cell one-third of the width */
+      #tab1 .links th {
+        width: 33.3333%;
+        padding: 0;
+      }
+
+      /* align each link: left / center / right */
+      #tab1 .links th:first-child  { text-align: left;  padding-left: 1em; }
+      #tab1 .links th:nth-child(2) { text-align: center; }
+      #tab1 .links th:last-child   { text-align: right; padding-right: 1em; }
+
+      /* increase the clickable link padding a little */
+      #tab1 .links a {
+        display: inline-block;
+        padding: 0.5em 0;
+      }
+    }
+  </style>
 </head>
 
+
 <div class="home">
+  <section class="c-archives">
 
+    <!-- desktop/tablet view -->
+    <table id="tab1" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <p>Andrew Yizhou Liu</p>
+          <p>Assistant Professor of Economics</p>
+          <p>
+            <a target="_blank"
+               href="https://walton.uark.edu/departments/economics/">
+              University of Arkansas
+            </a>
+          </p>
 
-
-<section class="c-archives">
-
-<table style="width: 0%; height: 0px; box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19); text-align: center; border-width: 0px; background-color: #fdfdfd;" cellspacing="0" cellpadding="0" id="tab1">
-  <tr>
-          <!--  <th style="width:500px;"> <img id="fotoprincipal" src="files/andrew.jpg"> </th>
-    <td style="width:30px;"> </td>
-    <td id="textoprincipal"  > -->
-    <p style="font-size:20px;color:black;text-align: center">
-      Andrew Yizhou Liu </p>
-      <p style="font-size:20px;color:black;text-align: center">
-        Assistant Professor of Economics </p>
-        <p style="font-size:20px;color:black;text-align: center"> <a target="_blank" href="https://walton.uark.edu/departments/economics/"> University of Arkansas </a>
-        </p>
-    <p style="margin-bottom: 1cm;">   </p>
-      <!--<p style="font-size:20px;color:black"> I am interested in macroeconomics, labor economics,
-        and public economics. </p>-->
-      <p style="margin-bottom: 1cm;">   </p>
-      <table style="width:30%;margin: 0px auto;" cellspacing="0" cellpadding="0">
-        <tr>
-          <th style="width:50px; text-align: center;"> <a class="botones" target="_blank" href="files/Liu, Andrew Yizhou-CV.pdf"> CV </a> </th>
-          <th style="width:50px; text-align: center;"> <a class="page-link" href="research.html"> Research </a> </th>
-        <!--  <th style="width:150px; text-align: center;"> <a class="page-link" href="teaching.html"> Teaching </a> </th>-->
-          <th style="width:50px; text-align: center;"> <a class="page-link" href="other.html"> Other </a> </th>
-        </tr>
-      </table>
-
-    </td>
-    <td style="width:15px;"> </td>
-  </tr>
-</table>
-
-
-
-
-<table style="width: 0%; height: 0px; box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center; border-width: 0px; background-color: #fdfdfd;" cellspacing="0" cellpadding="0" id="tab2">
-  <tr>
-  <!--  <th style="width:500px;"> <img id="fotoprincipal" src="files/andrew.jpg"> </th>
-  </tr>
-  <tr> -->
-
-  <table style="width: 100%; height: 100px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center; border-width: 0px; background-color: #fdfdfd;" id="tab2">
-    <!--<tr>
-    <tr style="height:20px;"> </tr>
-
-    <td style="width:20px;"> </td>-->
-    <td id="textoprincipal"  >
-      <p style="font-size:20px;color:black;text-align: center">
-        Assistant professor of economics </p>
-        <p style="font-size:20px;color:black;text-align: center"> <a target="_blank" href="https://walton.uark.edu/departments/economics/"> University of Arkansas </a>
-        </p>
-    <p style="margin-bottom: 1cm;">   </p>
-      <p style="font-size:20px;color:black"> I am interested in macroeconomics,
-        labor economics, and public economics. </p>
-      <p style="margin-bottom: 1cm;">   </p>
-
-
-      <table style="width:30%;margin: 0px auto;" cellspacing="0" cellpadding="0">
-        <tr>
-          <th style="width:30px; text-align: center;"> <a class="botones" target="_blank" href="files/Liu, Andrew Yizhou-CV.pdf"> CV </a> </th>
-          <th style="width:30px; text-align: center;"> <a class="page-link" href="research.html"> Research </a> </th>
-        <!--  <th style="width:150px; text-align: center;"> <a class="page-link" href="teaching.html"> Teaching </a> </th>-->
-          <th style="width:30px; text-align: center;"> <a class="page-link" href="other.html"> Other </a> </th>
-        </tr>
-      </table>
-
-    </td>
-    <td style="width:15px;"> </td>
-    </tr>
+          <table class="links" cellspacing="0" cellpadding="0">
+            <tr>
+              <th>
+                <a class="botones"
+                   target="_blank"
+                   href="files/Liu, Andrew Yizhou-CV.pdf">
+                  CV
+                </a>
+              </th>
+              <th>
+                <a class="page-link"
+                   href="research.html">
+                  Research
+                </a>
+              </th>
+              <th>
+                <a class="page-link"
+                   href="other.html">
+                  Other
+                </a>
+              </th>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
 
-  </tr>
-</table>
+    <!-- mobile view -->
+    <table id="tab2" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <p>Assistant Professor of Economics</p>
+          <p>
+            <a target="_blank"
+               href="https://walton.uark.edu/departments/economics/">
+              University of Arkansas
+            </a>
+          </p>
+          <p>I am interested in macroeconomics, labor economics, and public economics.</p>
 
+          <table class="links" cellspacing="0" cellpadding="0">
+            <tr>
+              <th>
+                <a class="botones"
+                   target="_blank"
+                   href="files/Liu, Andrew Yizhou-CV.pdf">
+                  CV
+                </a>
+              </th>
+              <th>
+                <a class="page-link"
+                   href="research.html">
+                  Research
+                </a>
+              </th>
+              <th>
+                <a class="page-link"
+                   href="other.html">
+                  Other
+                </a>
+              </th>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
 
-<h1> </h1>
-
-
-
-
-
-
+  </section>
 </div>
